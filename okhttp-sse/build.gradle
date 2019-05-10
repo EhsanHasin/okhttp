@@ -15,7 +15,6 @@ dependencies {
   testImplementation project(':mockwebserver')
   testImplementation deps.junit
   testImplementation deps.assertj
-  testCompileOnly deps.jsr305
 }
 
 task japicmp(type: me.champeau.gradle.japicmp.JapicmpTask, dependsOn: 'jar') {
